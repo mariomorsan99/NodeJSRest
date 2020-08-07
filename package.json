@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "express": "^4.17.1",
-        "forever": "2.0.0"
+        "forever": "2.0.0",
+        "jest": "^26.2.2"
     }
 }
