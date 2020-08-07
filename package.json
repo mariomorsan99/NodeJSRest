@@ -1,17 +1,31 @@
 {
-    "name": "express-HelloWorld",
-    "description": "Hello World ExpressJS WebService",
+    "name": "nodejsrest",
+    "description": "Sample NodeJs web application",
     "version": "0.0.1",
     "private": true,
-    "dependencies": {
-        "express": "4.16.2"
-    },
     "devDependencies": {
         "mocha": "5.0.0",
-        "unit.js": "2.0.0",
+        "unit.js": "2.1.1",
         "supertest": "3.0.0"
     },
     "scripts": {
-        "test": "mocha --recursive tests --exit"
+        "test": "jest",
+        "start": "nodemon server.js",
+        "aws-sdk": "^2.706.0",
+        "bcrypt": "^4.0.0",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-fileupload": "^1.1.7-alpha.3",
+        "google-auth-library": "^6.0.1",
+        "jsonwebtoken": "^8.5.1",
+        "memcached": "^2.2.2",
+        "mongoose": "^5.9.2",
+        "mongoose-unique-validator": "^2.0.3"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "forever": "2.0.0"
     }
 }
