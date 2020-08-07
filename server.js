@@ -7,6 +7,14 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.get('/', (request, resp, next) => {
+    resp.status(200).json({
+        mensaje: 'peticion correcta',
+        ok: true,
+        data: 'usuario'
+    });
+});
+
 var usuarioRoutes = require('./routes/usuario');
 
 app.use('/usuario', usuarioRoutes);
